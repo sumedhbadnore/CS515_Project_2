@@ -1,0 +1,38 @@
+[
+ {"name": "The Enchanted Library", 
+  "desc": "Ancient books line the shelves, and mystical symbols decorate the walls.",
+  "exits": { "east": 4, "west": 2 },
+  "items": ["books", "pen"]
+
+ }
+,
+ {"name": "The Artifacts Room", 
+  "desc": "A dimly lit room filled with ancient relics and valuable artworks.",
+  "exits": { "north": 5, "south": 4 },
+  "items": ["medal", "sceptre"]
+
+ }
+,
+ {"name": "A Movie Theater", 
+  "desc": "You find yourself in a vintage movie theater playing 'Forrest Gump'",
+  "exits": { "south": 3, "north": 5, "east": 0 },
+  "items": ["popcorn"]
+ }
+,
+ {"name": "The Haunted Manor",
+  "desc": "Creaky floorboards and eerie portraits create an unsettling atmosphere.",
+  "exits": { "north": 2, "east": 4 },
+  "items": ["skull", "key", "pumpkin"]
+ }
+ ,
+ {"name": "The Egyptian Tomb", 
+  "desc": "Mummies and mysterious artifacts surround you",
+  "exits": { "west": 0, "south": 3, "north": 1 }
+ }
+ ,
+ {"name": "The Secret Agent Hideout", 
+  "desc": "Briefcases, gadgets, and hidden passages set the stage for espionage.",
+  "exits": { "west": 0 },
+  "finalroom": true
+ }
+]

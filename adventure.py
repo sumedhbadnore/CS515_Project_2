@@ -109,7 +109,6 @@ class Adventure:
 
                 if player_choice[0] == "quit":
                     self.quit()
-                    # break
 
                 if player_choice[0] == "go":
                     if len(player_choice) >= 2:
