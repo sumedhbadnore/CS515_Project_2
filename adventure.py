@@ -49,21 +49,6 @@ class Adventure:
     def quit(self):
         print("Goodbye!")
         self.flag = False
-    
-    def help(self):
-        attributes = dir(Adventure)
-        my_functions = [i for i in attributes if not i.startswith("__")]
-        my_functions.remove('load_map')
-        my_functions.remove('run_game')
-        print("You can run the following commands:")
-        for func_name in my_functions:
-            func = getattr(Adventure, func_name)
-            signature = inspect.signature(func)
-            
-            if len(signature.parameters) > 1:
-                print(f" {func_name} ...")
-            else:
-                print(f" {func_name}")
 
     def get(self, item, items):
         if item in items:
@@ -86,7 +71,10 @@ class Adventure:
         if item in self.player_inventory:
             print(f"You drop the {item}.")
             self.player_inventory.remove(item)
-            self.room['items'].append(item)
+            if 'items' in self.room:
+                self.room['items'].append(item)
+            else:
+                self.room['items'] = item
 
         else:
             print(f"You don't have {item}.")
@@ -100,6 +88,21 @@ class Adventure:
                 print("You don't have the key.")
         else:
             print("You are not in the finalroom.")
+
+    def help(self):
+        attributes = dir(Adventure)
+        my_functions = [i for i in attributes if not i.startswith("__")]
+        my_functions.remove('load_map')
+        my_functions.remove('run_game')
+        print("You can run the following commands:")
+        for func_name in my_functions:
+            func = getattr(Adventure, func_name)
+            signature = inspect.signature(func)
+            
+            if len(signature.parameters) > 1:
+                print(f" {func_name} ...")
+            else:
+                print(f" {func_name}")
 
     def run_game(self):
         self.look()
