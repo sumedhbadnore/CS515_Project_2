@@ -1,8 +1,3 @@
-'''
-` win() func
-
-'''
-
 import json
 import sys
 import inspect
@@ -106,8 +101,6 @@ class Adventure:
         else:
             print("You are not in the finalroom.")
 
-        
-
     def run_game(self):
         self.look()
         while self.flag:
@@ -162,7 +155,6 @@ class Adventure:
             except EOFError:
                 print("Use 'quit' to exit.")
                 continue
-
 
 if __name__ == "__main__":
     if len(sys.argv) != 2:
