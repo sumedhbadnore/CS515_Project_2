@@ -128,7 +128,7 @@ class Adventure:
                 
                 if player_choice[0] == "get":
                     if len(player_choice) >= 2:
-                        if len(player_choice) >= 3:              ## DOUBT IF IT IS REQUIRED                      
+                        if len(player_choice) >= 3:                                   
                             for i in range(2,len(player_choice)):
                                 player_choice[1] = f"{player_choice[1]} {player_choice[i]}"
                         try:
