@@ -32,9 +32,11 @@ class Adventure:
             print(f"> {self.room['name']}\n\n{self.room['desc']}\n")
             if "items" in self.room and len(self.room['items']) > 0:
                 print("Items: ", end="")
-                for i in self.room['items']:
-                    print(i, end=" ")
-                print("\n")
+                all_items = self.room['items']
+                if(len(all_items) > 1):
+                    for i in range(0,len(all_items)-1):
+                        print(all_items[i], end=", ")
+                print(f"{all_items[-1]}\n")
             exits = ' '.join(self.room['exits'].keys())
             print(f"Exits: {exits}\n")
 
@@ -74,7 +76,7 @@ class Adventure:
             if 'items' in self.room:
                 self.room['items'].append(item)
             else:
-                self.room['items'] = item
+                self.room['items'] = f"{item}"
 
         else:
             print(f"You don't have {item}.")
@@ -166,4 +168,3 @@ if __name__ == "__main__":
     map_file = sys.argv[1]
     game = Adventure(map_file)
     game.run_game()
-    
