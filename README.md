@@ -6,10 +6,10 @@ sbadnore@stevens.edu
 
 [Github Repository](https://github.com/sumedhbadnore/CS515_Project_2)
 
-## Estimation of hours spent on the project
+## Estimation Of Hours Spent On The Project
 I have put approximately 22 hours into this project.
 
-## To execute the program, follow these steps
+## To Execute The Program, Follow These Steps
 - Install Python 3 on your system.
 - Download or clone this repository to your local machine.
 - Navigate to the repository folder.
@@ -36,16 +36,16 @@ This game contains several verbs that function as commands:
 
 - win: To assess the winning condition and declare win if true.
 
-## Testing of the code
+## Testing Of The Code
 - Initially, I conducted thorough code testing by executing each command across all provided map files.
   
 - Next, I created a custom map to ensure the proper functioning of all functions.
 
-## Unresolved Bugs or Issues
+## Unresolved Bugs Or Issues
 No unresolved bugs or issues were identified.
 
 
-## Examples of bugs resolved
+## Examples Of Bugs Resolved
 I didn't have any major issue, I faced a issue during implementation of `drop` function, if the room didn't have any items and if player dropped any item there, it would create multiple items with all the alphabets in the item drop for example, if player dropped pen it would show, Items: p,e,n. To solve this I use conditional statement to create an empty list of items in the room if it didn't have one and then appended the item.
 
 
@@ -118,6 +118,52 @@ What would you like to do?
 
 For example:
 ```
+> The Enchanted Library
+
+Ancient books line the shelves, and mystical symbols decorate the walls.
+
+Items: books, pen
+
+Exits: east west
+
+What would you like to do? go west
+You go west.
+
+> A Movie Theater
+
+You find yourself in a vintage movie theater playing 'Forrest Gump'
+
+Items: popcorn
+
+Exits: south north east
+
+What would you like to do? go south
+You go south.
+
+> The Haunted Manor
+
+Creaky floorboards and eerie portraits create an unsettling atmosphere.
+
+Items: skull, key, pumpkin
+
+Exits: north east
+
+What would you like to do? get key
+You pick up the key.
+What would you like to do? go north
+You go north.
+
+> A Movie Theater
+
+You find yourself in a vintage movie theater playing 'Forrest Gump'
+
+Items: popcorn
+
+Exits: south north east
+
+What would you like to do? go north
+You go north.
+
 > The Secret Agent Hideout
 
 Briefcases, gadgets, and hidden passages set the stage for espionage.
@@ -127,10 +173,7 @@ To successfully exit and claim victory, acquiring a key is essential.
 
 Exits: west
 
-What would you like to do? inventory
-Inventory:
- key
 What would you like to do? win
-Congratulations! You've conquered the escape room and emerged victorious!
+Congratulations! You've conquered the escape room and emerged victorious.
 Goodbye!
 ```
