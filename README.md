@@ -1,4 +1,4 @@
-# CS515 Project-1
+# CS515 Project-2 : Text Based Adventure Game
 
 ## Author Information
 Sumedh Badnore 
