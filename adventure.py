@@ -77,7 +77,6 @@ class Adventure:
             print("You're not carrying anything.")
 
     def drop(self, item):
-        print(f"Parameter item received: {item}") ###############################################
         if item in self.player_inventory:
             print(f"You drop the {item}.")
             self.player_inventory.remove(item)
