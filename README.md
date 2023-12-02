@@ -7,7 +7,7 @@ sbadnore@stevens.edu
 [Github Repository](https://github.com/sumedhbadnore/CS515_Project_2)
 
 ## Estimation of hours spent on the project
-I have put approximately 19 hours into this project.
+I have put approximately 22 hours into this project.
 
 ## To execute the program, follow these steps
 - Install Python 3 on your system.
