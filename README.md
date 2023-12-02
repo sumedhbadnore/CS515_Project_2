@@ -46,7 +46,7 @@ No unresolved bugs or issues were identified.
 
 
 ## Examples of bugs resolved
---write here--
+I didn't have any major issue, I faced a issue during implementation of `drop` function, if the room didn't have any items and if player dropped any item there, it would create multiple items with all the alphabets in the item drop for example, if player dropped pen it would show, Items: p,e,n. To solve this I use conditional statement to create an empty list of items in the room if it didn't have one and then appended the item.
 
 
 ## Extensions Implemented
