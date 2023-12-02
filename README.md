@@ -108,7 +108,7 @@ What would you like to do?
 
 - **Win Condition**: I have added a winning condition into the game. If the player reaches the 'finalroom' and possesses the key, they can use the `win` verb to check if they have successfully won the game.
 
-**To trigger win condition**: 
+- **To trigger win condition**: 
 1. You will be spawned in "The Enchanted Library", from there `go west`
 2. You will reach "A Movie Theater", from there `go south`
 3. Now you are in "The Haunted Manor", now you have to `get key`
