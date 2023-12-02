@@ -50,7 +50,8 @@ No unresolved bugs or issues were identified.
 
 
 ## Extensions Implemented
-- **Help Command** : The 'help' extension introduces a dynamic command that provides a comprehensive list of all valid functions within the game. Functions that require parameters are denoted by `[verb] ...` for example `go ...`
+- **Help Command**: The 'help' extension introduces a dynamic command that gives a complete list of all valid actions in the game. Functions that require parameters are denoted by `[verb] ...` for example:
+
 ```
 > A white room
 
@@ -69,4 +70,57 @@ You can run the following commands:
  quit
  win
 What would you like to do?
+```
+- **Drop Command**: The 'drop' extension improves the gameplay by allowing the player to drop an item in the room. Drop requires one parameter specifying the item to drop for example `drop [item]`. Executing this command removes the specified item from the player's inventory and adds it to the room's item list. For example:
+```
+> The Enchanted Library
+
+Ancient books line the shelves, and mystical symbols decorate the walls.
+
+Items: books, pen
+
+Exits: east west
+
+What would you like to do? get books
+You pick up the books.     
+What would you like to do? go east
+You go east.
+
+> The Egyptian Tomb
+
+Mummies and mysterious artifacts surround you
+
+Exits: west south north
+
+What would you like to do? drop books
+You drop the books.
+What would you like to do? look
+> The Egyptian Tomb
+
+Mummies and mysterious artifacts surround you
+
+Items: books
+
+Exits: west south north
+
+What would you like to do?
+```
+
+- **Win Condition**: I have added a winning condition into the game. If the player reaches the 'finalroom' and possesses the key, they can use the `win` verb to check if they have successfully won the game. For example:
+```
+> The Secret Agent Hideout
+
+Briefcases, gadgets, and hidden passages set the stage for espionage.
+
+You've reached the ultimate stage of the game.
+To successfully exit and claim victory, acquiring a key is essential.
+
+Exits: west
+
+What would you like to do? inventory
+Inventory:
+ key
+What would you like to do? win
+Congratulations! You've conquered the escape room and emerged victorious!
+Goodbye!
 ```
