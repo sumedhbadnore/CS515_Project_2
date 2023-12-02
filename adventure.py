@@ -92,7 +92,7 @@ class Adventure:
     def win(self):
         if "finalroom" in self.room:
             if "key" in self.player_inventory:
-                print("Congratulations! You've conquered the escape room and emerged victorious!")
+                print("Congratulations! You've conquered the escape room and emerged victorious.")
                 self.quit()
             else:
                 print("Uh-oh! You need a key to unlock the exit. Keep exploring to find the missing piece!")
@@ -169,10 +169,10 @@ class Adventure:
                 continue
 
 if __name__ == "__main__":
-    if len(sys.argv) != 2:
+    if len(sys.argv) != 2:    
         print("Usage: python3 adventure.py [map file]")
         sys.exit(1)
-
+        
     map_file = sys.argv[1]
     game = Adventure(map_file)
     game.run_game()
