@@ -26,6 +26,13 @@ class Adventure:
         if "finalroom" in self.room:
             print(f"> {self.room['name']}\n\n{self.room['desc']}\n")
             print("You are in the final room of the game,\nYou need to have a key to leave this room and win the game")
+            if "items" in self.room and len(self.room['items']) > 0:
+                print("Items: ", end="")
+                all_items = self.room['items']
+                if(len(all_items) > 1):
+                    for i in range(0,len(all_items)-1):
+                        print(all_items[i], end=", ")
+                print(f"{all_items[-1]}\n")
             exits = ' '.join(self.room['exits'].keys())
             print(f"Exits: {exits}\n")
         else:
@@ -70,13 +77,15 @@ class Adventure:
             print("You're not carrying anything.")
 
     def drop(self, item):
+        print(f"Parameter item received: {item}") ###############################################
         if item in self.player_inventory:
             print(f"You drop the {item}.")
             self.player_inventory.remove(item)
             if 'items' in self.room:
                 self.room['items'].append(item)
             else:
-                self.room['items'] = f"{item}"
+                self.room['items'] = []
+                self.room['items'].append(item)
 
         else:
             print(f"You don't have {item}.")

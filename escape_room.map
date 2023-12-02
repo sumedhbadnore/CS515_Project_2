@@ -3,14 +3,12 @@
   "desc": "Ancient books line the shelves, and mystical symbols decorate the walls.",
   "exits": { "east": 4, "west": 2 },
   "items": ["books", "pen"]
-
  }
 ,
  {"name": "The Artifacts Room", 
   "desc": "A dimly lit room filled with ancient relics and valuable artworks.",
   "exits": { "north": 5, "south": 4 },
   "items": ["medal", "sceptre"]
-
  }
 ,
  {"name": "A Movie Theater", 
