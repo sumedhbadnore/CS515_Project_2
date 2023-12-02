@@ -25,7 +25,7 @@ class Adventure:
         self.room = self.game_map[self.current_room]
         if "finalroom" in self.room:
             print(f"> {self.room['name']}\n\n{self.room['desc']}\n")
-            print("You are in the final room of the game,\nYou need to have a key to leave this room and win the game")
+            print("You've reached the ultimate stage of the game.\nTo successfully exit and claim victory, acquiring a key is essential.\n")
             if "items" in self.room and len(self.room['items']) > 0:
                 print("Items: ", end="")
                 all_items = self.room['items']
@@ -92,10 +92,10 @@ class Adventure:
     def win(self):
         if "finalroom" in self.room:
             if "key" in self.player_inventory:
-                print("Congratulations, You Won!")
+                print("Congratulations! You've conquered the escape room and emerged victorious!")
                 self.quit()
             else:
-                print("You don't have the key.")
+                print("Uh-oh! You need a key to unlock the exit. Keep exploring to find the missing piece!")
         else:
             print("You are not in the finalroom.")
 
