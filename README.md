@@ -115,7 +115,7 @@ What would you like to do?
 4. After getting key, you will have to `go north`
 5. Once again you will be in "A Movie Theater", this time `go north`
 5. Now you have reached "The Secret Agent Hideout", it is the ultimate stage. enter `win` to win the game.
-6. If you don't have the key in the ultimate stage, you will lose.
+6. If you don't have the key in the ultimate stage, you will lose the game.
 
 For example:
 ```
