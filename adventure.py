@@ -95,7 +95,9 @@ class Adventure:
                 print("Congratulations! You've conquered the escape room and emerged victorious.")
                 self.quit()
             else:
-                print("Uh-oh! You need a " + self.room["finale-key"] + " to unlock the exit. Keep exploring to find the missing piece!")
+                print("Uh-oh! You need a " + self.room["finale-key"] + " to unlock the exit. You lose!")
+                self.quit()
+
         else:
             print("You are not in the ultimate room.")
 
