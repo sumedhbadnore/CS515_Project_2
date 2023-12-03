@@ -23,7 +23,7 @@ class Adventure:
 
     def look(self):
         self.room = self.game_map[self.current_room]
-        if "finalroom" in self.room:
+        if "finale-room" in self.room:
             print(f"> {self.room['name']}\n\n{self.room['desc']}\n")
             print("You've reached the ultimate stage of the game.\nTo successfully exit and claim victory, acquiring a key is essential.\n")
             if "items" in self.room and len(self.room['items']) > 0:
@@ -90,14 +90,14 @@ class Adventure:
             print(f"You don't have {item}.")
 
     def win(self):
-        if "finalroom" in self.room:
-            if "key" in self.player_inventory:
+        if "finale-room" in self.room:
+            if self.room["finale-key"] in self.player_inventory:
                 print("Congratulations! You've conquered the escape room and emerged victorious.")
                 self.quit()
             else:
-                print("Uh-oh! You need a key to unlock the exit. Keep exploring to find the missing piece!")
+                print("Uh-oh! You need a " + self.room["finale-key"] + " to unlock the exit. Keep exploring to find the missing piece!")
         else:
-            print("You are not in the finalroom.")
+            print("You are not in the ultimate room.")
 
     def help(self):
         attributes = dir(Adventure)
