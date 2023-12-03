@@ -106,7 +106,7 @@ Exits: west south north
 What would you like to do?
 ```
 
-- **Win Condition**: I have added a winning condition to the game. If the player reaches the 'finalroom' and possesses the key, they can use the `win` verb to check if they have successfully won the game.
+- **Win Condition**: I have added a winning condition to the game. If the player reaches the 'finale-room' and possesses the key, they can use the `win` verb to check if they have successfully won the game.
 
 - **To trigger win condition**: 
 1. You will be spawned in "The Enchanted Library", from there `go west`
