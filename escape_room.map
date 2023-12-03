@@ -31,6 +31,7 @@
  {"name": "The Secret Agent Hideout", 
   "desc": "Briefcases, gadgets, and hidden passages set the stage for espionage.",
   "exits": { "west": 0 },
-  "finalroom": true
+  "finale-room": "true",
+  "finale-key": "key"
  }
 ]
