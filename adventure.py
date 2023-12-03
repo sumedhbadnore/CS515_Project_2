@@ -72,7 +72,7 @@ class Adventure:
         if len(self.player_inventory) > 0:
             print("Inventory:")
             for i in self.player_inventory:
-                print(" " + i)
+                print("  " + i)
         else:
             print("You're not carrying anything.")
 
