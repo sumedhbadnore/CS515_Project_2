@@ -1,10 +1,10 @@
-# CS515 Project-2 : Text Based Adventure Game
+# CS515 Project-2: Text Based Adventure Game
 
 ## Author Information
 Sumedh Badnore 
 sbadnore@stevens.edu
 
-[Github Repository](https://github.com/sumedhbadnore/CS515_Project_2)
+[GitHub Repository](https://github.com/sumedhbadnore/CS515_Project_2)
 
 ## Estimation Of Hours Spent On The Project
 I have put approximately 22 hours into this project.
@@ -34,7 +34,7 @@ This game contains several verbs that function as commands:
 
 - quit: The `quit` verb concludes the game and exits the program.
 
-- win: To assess the winning condition and declare win if true.
+- win: To assess the winning condition and declare the win if true.
 
 ## Testing Of The Code
 - Initially, I conducted thorough code testing by executing each command across all provided map files.
@@ -46,7 +46,7 @@ No unresolved bugs or issues were identified.
 
 
 ## Examples Of Bugs Resolved
-I didn't have any major issue, I faced a issue during implementation of `drop` function, if the room didn't have any items and if player dropped any item there, it would create multiple items with all the alphabets in the item drop for example, if player dropped pen it would show, Items: p,e,n. To solve this I use conditional statement to create an empty list of items in the room if it didn't have one and then appended the item.
+I didn't have any major issues, I faced an issue during the implementation of the `drop` function if the room didn't have any items, and if a player dropped any item there, it would create multiple items with all the alphabets in the item dropped for example, if a player dropped pen it would show, Items: p,e,n. To solve this I used a conditional statement to create an empty list of items in the room if it didn't have one and then appended the item.
 
 
 ## Extensions Implemented
@@ -106,7 +106,7 @@ Exits: west south north
 What would you like to do?
 ```
 
-- **Win Condition**: I have added a winning condition into the game. If the player reaches the 'finalroom' and possesses the key, they can use the `win` verb to check if they have successfully won the game.
+- **Win Condition**: I have added a winning condition to the game. If the player reaches the 'finalroom' and possesses the key, they can use the `win` verb to check if they have successfully won the game.
 
 - **To trigger win condition**: 
 1. You will be spawned in "The Enchanted Library", from there `go west`
